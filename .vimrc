@@ -18,5 +18,15 @@
 :set filetype=python
 
 "Set background
-:set background=light
+:set background=dark
 
+"enable all Python syntax highlighting features
+let_python_highlight_all = 1
+
+"autocompletion of parenthesis, quotes for strings etc.
+inoremap { {}<Esc>ha
+inoremap ( ()<Esc>ha
+inoremap [ []<Esc>ha
+inoremap " ""<Esc>ha
+inoremap ' ''<Esc>ha
+inoremap ` ``<Esc>ha
